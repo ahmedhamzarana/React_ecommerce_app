@@ -21,9 +21,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <div className="gradient-bg">
-      {/* Header always visible */}
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
@@ -40,7 +38,6 @@ function App() {
         <Route path="/privacy_policy" element={<PrivacyAndPolicy />} />
         <Route path="/account_dashboard/*" element={<AccountDashboard />} />
       </Routes>
-
       <Footer />
     </div>
   )
