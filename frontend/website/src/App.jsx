@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Index from './components/Index'
-import ProductDetail from './components/ProductDetail'
+// import ProductDetail from './components/ProductDetail'
 import Cart from './components/Cart'
 import Shop from './components/Shop'
 import Contact from './components/Contact'
@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/productdetail" element={<ProductDetail />} />
+        {/* <Route path="/productdetail" element={<ProductDetail />} /> */}
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />

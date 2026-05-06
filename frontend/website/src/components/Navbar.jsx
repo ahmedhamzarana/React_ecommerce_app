@@ -165,16 +165,16 @@ function Navbar() {
             <button className="btn-close-lg position-absolute top-0 start-0 w-100" />
           </a>
           <div className="logo">
-            <a href="index.html">
+            <Link to="index">
               <img src="assets/images/logo.png" alt="Uomo" className="logo__image d-block" />
-            </a>
+            </Link>
           </div>
-          <a href="#" className="header-tools__item header-tools__cart js-open-aside" data-aside="cartDrawer">
+          <Link to="cart" className="header-tools__item header-tools__cart js-open-aside" data-aside="cartDrawer">
             <svg className="d-block" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="#icon_cart" />
             </svg>
             <span className="cart-amount d-block position-absolute js-cart-items-count">3</span>
-          </a>
+          </Link>
         </div>
         <nav className="header-mobile__navigation navigation d-flex flex-column w-100 position-absolute top-100 bg-body overflow-auto">
           <div className="container">
@@ -196,20 +196,20 @@ function Navbar() {
           <div className="container">
             <div className="overflow-hidden">
               <ul className="navigation__list list-unstyled position-relative">
-                <li className="navigation__item">
-                  <a href="index.html" className="navigation__link">Home</a>
+                 <li className="navigation__item">
+                  <Link to="/" className="navigation__link">Home</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="shop.html" className="navigation__link">Shop</a>
+                  <Link to="shop" className="navigation__link">Shop</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="cart.html" className="navigation__link">Cart</a>
+                  <Link to="cart" className="navigation__link">Cart</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="about.html" className="navigation__link">About</a>
+                  <Link to="about" className="navigation__link">About</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="contact.html" className="navigation__link">Contact</a>
+                  <Link to="contact" className="navigation__link">Contact</Link>
                 </li>
               </ul>
             </div>
